@@ -9,7 +9,7 @@ import requests
 # Write directly to the app
 st.title("Customise your:heart: smoothie :apple:")
 st.write("""Choose the fruits you want in your customised smoothie""")
-
+from snowflake.snowpark.functions import col
 
 
 name_on_order = st.text_input('Name to be printed no Smoothie:')
