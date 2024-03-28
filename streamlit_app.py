@@ -30,7 +30,7 @@ ingrediants_list = st.multiselect('Choose up to 5 ingredients:', my_dataframe, m
 if ingrediants_list:
     ingrediants_string =' '
     for fruit_name in ingrediants_list:
-        ingrediants_string += fruit_name + ' '
+        ingrediants_string += fruit_name + ''
         
         search_on=pd_df.loc[pd_df['FRUIT_NAME'] == fruit_name, 'SEARCH_ON'].iloc[0]
         st.write('The search value for ', fruit_name,' is ', search_on, '.')
